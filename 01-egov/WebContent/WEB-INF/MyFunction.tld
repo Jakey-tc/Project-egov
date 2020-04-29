@@ -1,0 +1,18 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	   version="2.0">
+
+	   <description>第一个函数getCountryCode用于获取币种信息</description>
+	   <tlib-version>1.0</tlib-version>
+	   <short-name>myFunction</short-name>
+	   <uri>http://www.myElFunction.com/jsp/el</uri>
+	   
+	   
+	   <function>
+	   	<name>getCountryCode</name>
+	    <function-class>com.bjpowernode.egov.system.utils.StringUtil</function-class>
+	   	<function-signature>java.lang.String getCountryCode(java.lang.String,java.lang.String)</function-signature>
+	   </function>
+					
+</taglib>

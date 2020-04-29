@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title></title>
+
+		 <link rel = "stylesheet" type = "text/css" href = "register.css"/>
+
+		<script type="text/javascript" src="register.js">
+
+		</script>
+	
+
+	</head>
+
+	<body>
+		<form name="register">
+			<table>
+				<tr>
+					<td>用户名:</td>
+					<td><input type="text" id="username" /><font color="red">*</font></td>
+				</tr>
+
+				<tr>
+					<td>密码：</td>
+					<td><input type="password" id="psw"/><font color="red">*</font></td>
+				</tr>
+
+				<tr>
+					<td>确认密码：</td>
+					<td><input type="password" id="checkpsw"/><font color="red">*</font></td>
+				</tr>
+
+				<tr>
+					<td>性别</td>
+					<td>男<input type="radio" value="01">女<input type="radio" value="02"></td>
+				</tr>
+
+				<tr>
+					<td>出生年月</td>
+					<td><select>
+						<option value="00" selected="selected">请选择</option>
+						<option value="01">1999</option>
+						<option value="02">2000</option>
+						<option value="03">2001</option>
+
+					</select>年
+					<select>
+						<option value="000" selected="selected">请选择</option>
+						<option value="001">01</option>
+						<option value="002">02</option>
+						<option value="003">03</option>
+
+					</select>月
+					<select>
+						<option value="00001" selected="selected">请选择</option>
+						<option value="0001">01</option>
+						<option value="0002">02</option>
+						<option value="0003">03</option>
+
+					</select>日</td>
+				</tr>
+
+				<tr>
+					<td><input type="button" value="注册"/></td>
+					<td><input type="button" value="清空" onclick="clear();"/></td>
+				</tr>
+			</table>
+		
+		</form>
+	</body>
+</html>

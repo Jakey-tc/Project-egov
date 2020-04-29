@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+ul {
+	list-style-type: square;
+}
+
+#registerManagerShow {
+	position: relative;
+	left: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*设置所有li标签前面的标志的样式  */
+li {
+	list-style-type:circle;
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+
+<script type="text/javascript">
+	
+	var flag1 = true;
+	var flag11 = true;
+	var flag12 = true;
+	
+	$(document).ready(function(){
+		
+	
+		
+		/*点击“登记管理”时的操作，下滑和上滑  */
+		$("#registerManagerShow").css("display","none");
+		$("#registerManager").click(function(){
+			if(flag1){
+				
+				$("#registerManagerShow").slideDown(50);	
+				flag1 = false;
+			}else{
+				
+				$("#registerManagerShow").slideUp(50);
+				//上滑登记管理的ul同时上滑所有的子ul。
+				$("#baseInfoRegShow").slideUp(50);
+				flag11 = true;
+				$("#orgForeignExchangeRegShow").slideUp(50);
+				flag12 = true;
+				
+				flag1 = true;
+			}
+		
+			
+		});
+		
+		
+	
+		
+		/*点击“基本信息登记”时的操作，下滑和上滑  */
+		$("#baseInfoRegShow").css("display","none");
+		$("#baseInfoReg").click(function(){
+			if(flag11){
+				
+				$("#baseInfoRegShow").slideDown(50);
+				flag11 = false;
+				
+			}else{
+				
+				$("#baseInfoRegShow").slideUp(50);
+				flag11 = true;
+			}
+		});
+		
+	
+		/*点击“企业外汇登记”时的操作，下滑和上滑  */
+		$("#orgForeignExchangeRegShow").css("display","none");
+		$("#orgForeignExchangeReg").click(function(){
+				
+			if(flag12){
+				
+				$("#orgForeignExchangeRegShow").slideDown(50);
+				flag12 = false;
+			}else{
+				
+				$("#orgForeignExchangeRegShow").slideUp(50);
+				flag12 = true;
+			}
+			
+		});
+		
+	});
+	
+
+	
+</script>
+</head>
+<body>
+	<ul>
+		<li><div id="registerManager" style="cursor:pointer;">登记管理</div></li>
+			<div id="registerManagerShow">
+				
+				<li><span id="baseInfoReg" style="cursor:pointer;">基本信息登记</span></li>
+				<div id="baseInfoRegShow">
+					<li style="list-style:none;">
+						<ul>
+							<li>企业投资人信息登记
+								<ul>
+									<li><a href="basicinfo/exoticOrgList.jsp" target="L2">录入</a></li>
+								</ul>
+							</li>
+		
+						</ul>
+		
+					</li>
+				</div>
+	
+	
+				<li><span id="orgForeignExchangeReg" style="cursor:pointer;">企业外汇登记</span>
+					<div id="orgForeignExchangeRegShow">
+						<ul>
+							<li>新设外商企业登记
+								<ul>
+									<li><a href="/01-egov/foreignExchange/newInputOrg.jsp" target="L2">录入</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				
+				</li>
+	
+			</div>
+		</br>
+		
+		<li>精准管理</li>
+			<div>
+		
+				<ul>
+				
+					<li>资本金账户管理
+						<ul>
+							<li>资本金账户开户核准
+								<ul>
+									<li><a href="auth/inputOrg.jsp" target="L2">录入</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		<li><a href="authresponse/authResponseList.jsp" target="L2">银行核准件查询</a></li>
+		
+		<li><a href="pageQueryUserServlet3" target="L2"
+			style="text-decoration: none;">用户管理</a></li>
+			
+		
+
+	</ul>
+</body>
+</html>

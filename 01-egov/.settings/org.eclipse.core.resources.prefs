@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//WebContent/auth/inputOrg.jsp=UTF-8
+encoding//WebContent/auth/openAccountAuthDetail.jsp=UTF-8
+encoding//WebContent/auth/orgcodeSelect.jsp=UTF-8
+encoding//WebContent/authresponse/authResponseList.jsp=UTF-8
+encoding//WebContent/authresponse/authResponseView.jsp=UTF-8
+encoding//WebContent/basicinfo/exoticOrgAdd.jsp=UTF-8
+encoding//WebContent/basicinfo/exoticOrgList.jsp=UTF-8
+encoding//WebContent/basicinfo/exoticOrgView.jsp=UTF-8
+encoding//WebContent/foreignExchange/newInputOrg.jsp=UTF-8
